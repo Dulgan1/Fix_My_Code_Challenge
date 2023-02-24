@@ -14,7 +14,7 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-size = parseInt(process.argv[2], 16)
+size = parseInt(process.argv[2], 10) /* Radix valie is 10 for decimal: cause of bug */
 
 for (let i = 0 ; i < size ; i ++) {
     for (let j = 0 ; j < size ; j ++) {
